@@ -1,0 +1,16 @@
+{
+  "name": "user-onboarding-db",
+  "version": "1.0.0",
+  "description": "Database setup and deployment scripts for User Onboarding Platform",
+  "type": "module",
+  "scripts": {
+    "deploy": "node deploy-schema.js",
+    "generate-admin-hash": "node generate-admin-hash.js",
+    "test-connection": "node test-connection.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.4",
+    "mssql": "^12.2.0"
+  }
+}

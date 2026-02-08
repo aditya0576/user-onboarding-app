@@ -1,0 +1,17 @@
+{
+  "name": "user-onboarding-platform",
+  "version": "1.0.0",
+  "description": "Secure User Onboarding and Approval Platform",
+  "scripts": {
+    "test:e2e": "playwright test",
+    "test:e2e:headless": "playwright test --workers=1",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:debug": "playwright test --debug",
+    "test:e2e:report": "playwright show-report",
+    "test:e2e:codegen": "playwright codegen http://localhost:3000"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "playwright": "^1.58.2"
+  }
+}
